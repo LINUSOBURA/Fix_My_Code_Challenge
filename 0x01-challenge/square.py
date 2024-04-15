@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-class square():
+class square:
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -12,7 +12,7 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.width * 2) + (self.height * 2)
+        return (self.width * 4)
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
