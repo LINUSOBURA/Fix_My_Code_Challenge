@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ Index view
 """
-from api.v1.app import app_views
-from flask import jsonify
+from flask import Blueprint, jsonify
+
+app_views = Blueprint('app_views', __name__)
 
 
 @app_views.route('/api/v1/status', methods=['GET'], strict_slashes=False)
